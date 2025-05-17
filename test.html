@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>虚线箭头示例</title>
+
+  <!-- 配置 MathJax：识别 $…$ 作为行内公式 -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <!-- 引入 MathJax -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/img/inference_process.png" alt="Banner Image" id="tree" style="height:100%">
+      <h2 class="subtitle has-text-centered">
+        Overview of Sketching Agent drawing a target sketch. In the inference process, the agent outputs stroke parameters according to the current start point and the canvas at each time. The renderer maps the strokes to the canvas.  
+        在这里，行内数学公式 `$\dashrightarrow$` 就会被渲染成虚线箭头了：
+        <br>
+        <em>… The renderer maps the strokes to the canvas. The $\dashrightarrow$ indicates …</em>
+      </h2>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
